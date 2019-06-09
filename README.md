@@ -33,7 +33,7 @@ $ waitress-serve --port=8084 --call 'app:create_app'
 方法：POST
 + param {string} screenshot_url 截图地址
 + param {string} callback_url 回调地址
-+ return {object} 返回内容
++ return {object} 返回内容
 ```python
 {
   "callback_url": string,
@@ -42,7 +42,7 @@ $ waitress-serve --port=8084 --call 'app:create_app'
   "message": string
 }
 ```
-截图成功后，将向`callback_url`发起一次 HTTP POST 请求，请求参数为：
+截图成功后，将向`callback_url`发起一次 HTTP POST 请求：
 ```python
 {
   "base64_image": string
@@ -53,7 +53,7 @@ $ waitress-serve --port=8084 --call 'app:create_app'
 路径：/api/screenshot
 方法：GET
 + param {string} screenshot_url 截图地址
-+ return {object} 返回内容
++ return {object} 返回内容
 ```python
 {
   "screenshot_url": string,
