@@ -1,0 +1,5 @@
+*.pyc
+instance/
+app.egg-info/
+.vscode/
+venv/
